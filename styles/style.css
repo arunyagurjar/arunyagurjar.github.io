@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
+
+
 body {
   margin: 0px;
-  font-family:'Titillium Web', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .body {
@@ -57,7 +59,8 @@ a {
   color: #457b9d;
   text-align: center;
 }
-p{
+
+p {
   text-align: left;
 }
 
@@ -66,17 +69,41 @@ p{
   justify-content: center;
 }
 
-.about {
+.cards {
+  overflow: auto;
+}
 
+.about {
   text-align: left;
   background-color: #c8d3d5;
   padding: 3% 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
-.about:hover{
+
+.about:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) 
+{
+  .skillcard{
+    margin-top: 2%;
+  }
+}
+@media (min-width: 900px) {
+  .lcards {
+    grid-gap: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rcards {
+    grid-gap: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .educard {
@@ -84,10 +111,12 @@ p{
   background-color: #c8d3d5;
   padding: 3% 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
-.educard:hover{
+.educard>section{
+  margin-bottom: 15%;
+}
+.educard:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -95,19 +124,19 @@ p{
 .skillcard {
   text-align: center;
   background-color: #c8d3d5;
-  padding: 2.5% 5%;
+  padding: 3% 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  margin-top: 2%;
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
-.skillcard:hover{
+
+.skillcard:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 /* Section Styles */
 .projects {
-
+  grid-column: 1;
   text-align: center;
   background-color: #c8d3d5;
   padding: 3% 5%;
@@ -115,23 +144,27 @@ p{
   transition: 0.3s;
   margin-top: 2%;
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
+  margin-bottom: 4%;
 }
-.projects:hover{
+
+.projects:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .work {
+  grid-column: 2;
   text-align: center;
   background-color: #c8d3d5;
   padding: 3% 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   margin-top: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
-.work:hover{
+
+.work:hover {
   transform: scale(1.025);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -142,6 +175,7 @@ footer {
   background: #6e8387;
   padding: 2% 5%;
   border-radius: 1%;
+  clear: both;
 }
 
 footer>h2 {
@@ -155,20 +189,20 @@ footer>a {
 footer>a>img {
   width: 30px;
   padding: 8px 8px;
-  margin: 0px 7px ;
+  margin: 0px 7px;
   background-color: #243e36;
   border-radius: 8px;
   transition: background-color 0.9s ease-in-out;
 }
 
-.lin:hover{
+.lin:hover {
   background-color: #2e6a8f;
 }
 
-.mail:hover{
+.mail:hover {
   background-color: #d64242;
 }
 
-.insta:hover{
+.insta:hover {
   background-color: rgb(220, 71, 106);
 }
