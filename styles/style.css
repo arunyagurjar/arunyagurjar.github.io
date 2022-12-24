@@ -10,7 +10,7 @@ body {
 
 .body {
   background-color: #fcfafa;
-  padding: 6% 15% 0% 15%;
+  padding: 5% 10% 0% 10%;
 }
 
 /* Heading Styles */
@@ -35,7 +35,7 @@ h3 {
 }
 
 /* Image Styles */
-img {
+.profilepic>img {
   width: 250px;
   padding: 10px 10px;
   border-radius: 50%;
@@ -43,13 +43,12 @@ img {
 }
 
 /* transition Styles */
-img:hover {
-  transform: scale(1.2);
+.profilepic>img:hover {
+  transform: scale(1.1);
 }
 
 h1:hover {
   color: #6e8387;
-
 }
 
 /* Link Styles */
@@ -119,6 +118,7 @@ footer {
   text-align: center;
   background: #6e8387;
   padding: 2% 5%;
+  border-radius: 1%;
 }
 
 footer>h2 {
@@ -126,14 +126,26 @@ footer>h2 {
 }
 
 footer>a {
-  color: #fcfafa;
-  background: #a4b8c4;
-  border-radius: 4px;
-  padding: 1%;
-  transition: color 0.3s ease-in-out;
+  background-color: #6e8387;
 }
 
-footer>a:hover {
-  color: #a4b8c4;
-  background: #fcfafa;
+footer>a>img {
+  width: 30px;
+  padding: 10px 10px;
+  margin: 0px 7px ;
+  background-color: #243e36;
+  border-radius: 8px;
+  transition: background-color 0.9s ease-in-out;
+}
+
+.lin:hover{
+  background-color: #2e6a8f;
+}
+
+.mail:hover{
+  background-color: #d64242;
+}
+
+.insta:hover{
+  background-color: rgb(220, 71, 106);
 }
