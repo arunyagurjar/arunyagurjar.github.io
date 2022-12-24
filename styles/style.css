@@ -114,7 +114,8 @@ p {
   transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 .educard>section{
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .educard:hover {
   transform: scale(1.025);
