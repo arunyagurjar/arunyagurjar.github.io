@@ -7,6 +7,7 @@
 
 body {
   margin: 0px;
+  background-color: #fcfafa;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -74,6 +75,7 @@ p {
 }
 
 .about {
+  border-radius: 5px;
   text-align: left;
   background-color: #c8d3d5;
   padding: 3% 5%;
@@ -107,6 +109,7 @@ p {
 }
 
 .educard {
+  border-radius: 5px;
   text-align: center;
   background-color: #c8d3d5;
   padding: 3% 5%;
@@ -123,6 +126,7 @@ p {
 }
 
 .skillcard {
+  border-radius: 5px;
   text-align: center;
   background-color: #c8d3d5;
   padding: 3% 5%;
@@ -137,6 +141,7 @@ p {
 
 /* Section Styles */
 .projects {
+  border-radius: 5px;
   grid-column: 1;
   text-align: center;
   background-color: #c8d3d5;
@@ -154,6 +159,7 @@ p {
 }
 
 .work {
+  border-radius: 5px;
   grid-column: 2;
   text-align: center;
   background-color: #c8d3d5;
@@ -170,8 +176,69 @@ p {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.digital>footer{background: #fcfafa;}
+.digital{
+  border-radius: 100px;
+  text-align: center;
+  background: #fcfafa;
+  padding: 2% 5%;
+  border-radius: 1%;
+}
+.digital>footer>h2
+{
+  color: black;
+  text-size-adjust: bold;
+}
+@media (max-width: 1000px)
+{
+.digital>footer>a>h3
+{
+  display: block;
+  align-content: center;
+  justify-content: center;
+  color: #183a37;
+  text-align: center;
+  background-color: #c8d3d5;
+  margin: 1% 20%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+}
+@media (min-width: 1001px)
+{
+.digital>footer>a>h3
+{
+  display: block;
+  align-content: center;
+  justify-content: center;
+  color: #183a37;
+  text-align: center;
+  background-color: #c8d3d5;
+  margin: 1% 35%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out;
+}
+}
+
+.digital>footer>a>h3:hover {
+  transform: scale(1.025);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.digital>footer>a:hover, .digital>footer>a:visited, .digital>footer>a:link, .digital>footer>a:active
+{
+    text-decoration: none;
+}
+.digital>a>h3:hover {
+  transform: scale(1.025);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 /*footer styles */
 footer {
+  border-radius: 100px;
   text-align: center;
   background: #6e8387;
   padding: 2% 5%;
