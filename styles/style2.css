@@ -91,7 +91,7 @@ h2 {
   object-fit: cover;
   border-radius: 10px;
   filter: grayscale(1);
-  transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out,filter 0.7s ease-in-out,height 1s ease-in-out;
+  transition: box-shadow 0.7s ease-in-out, transform 0.7s ease-in-out,filter 0.7s ease-in-out;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -100,7 +100,6 @@ img:hover
   transform: scale(1.05);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   filter: grayscale(0);
-  height : 100%;
 }
 }
 
